@@ -76,3 +76,5 @@ out/
 
 # FuseBox cache
 .fusebox/
+.env.*
+next.config.js

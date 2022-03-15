@@ -168,9 +168,8 @@ function Navigation(props) {
         {renderSubNav('Vote', 'vote')}
         {renderSubNav('Rewards', 'rewards')}
         {renderSubNav('Whitelist', 'whitelist')}
-        {renderSubNavWithExternalLink('Borrow', 'https://app.dei.finance/borrow')}
-        {renderSubNavWithIcon('/socials/telegram.svg', 'https://t.me/solidlyvision')}
-        {renderSubNavWithIcon('/socials/twitter.svg', 'https://twitter.com/SolidlyVision')}
+        {renderSubNavWithIcon('/socials/telegram.svg', 'https://t.me/')}
+        {renderSubNavWithIcon('/socials/twitter.svg', 'https://twitter.com/')}
       </ToggleButtonGroup>
     )
   }
@@ -200,6 +199,7 @@ function Navigation(props) {
     return (
       <ToggleButton
         href={link}
+        value={link}
         target="_blank"
         rel="noopener noreferrer"
         className={classes.navButton}
