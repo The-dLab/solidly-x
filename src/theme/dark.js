@@ -11,11 +11,12 @@ const theme = createTheme({
       paper: 'rgb(25, 33, 56)',
     },
     primary: {
-      main: '#06d3d7',
+      main: '#17B449',
     },
     text: {
       primary: 'rgba(255, 255, 255, 0.87)',
       secondary: '#7E99B0',
+      // primary: '#17B449',
     },
     type: 'dark',
   },

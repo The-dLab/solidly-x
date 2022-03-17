@@ -3,8 +3,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 0px;
-  padding-top: 120px;
+  padding-top: 20px;
   position: relative;
 }
 
@@ -43,20 +42,6 @@
 .contentFloat {
   position: relative;
   z-index: 9;
-}
-
-.sphere {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 420px;
-  height: 420px;
-  background-image: url('/images/sphere_001.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.42;
 }
 
 .overviewIcon {
@@ -133,10 +118,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .ffContainer {
-    padding-top: 80px;
-  }
-
   .gridWrapper {
     width: calc(100% - 80px) !important;
     margin: 290px auto 60px auto;
@@ -167,9 +148,5 @@
 
   .overviewIcon {
     font-size: 80px !important;
-  }
-
-  .ffContainer {
-    padding-top: 50px;
   }
 }

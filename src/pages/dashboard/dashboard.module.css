@@ -3,8 +3,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 0px;
-  padding-top: 60px;
   position: relative;
 }
 
@@ -127,20 +125,6 @@
   transition: all 300ms ease-out;
 }
 
-.sphere {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 420px;
-  height: 420px;
-  background-image: url('/images/sphere_001.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.42;
-}
-
 .contentFloat {
   position: relative;
   z-index: 9;
@@ -151,15 +135,6 @@
 .viewVoting,
 .viewRewards {
   float: left;
-}
-
-@media screen and (max-width: 1600px) {
-}
-
-@media screen and (max-width: 1200px) {
-  .ffContainer {
-    padding-top: 120px;
-  }
 }
 
 @media screen and (max-width: 600px) {

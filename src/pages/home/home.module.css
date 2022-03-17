@@ -147,26 +147,7 @@
   color: #06d3d7 !important;
 }
 
-.floatingSphere {
-  height: 600px;
-  width: 600px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url('/images/sphere_001.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 1;
-  mix-blend-mode: lighten;
-  opacity: 0.5;
-}
-
 @media screen and (max-width: 960px) {
-  .floatingSphere {
-    display: none;
-  }
-
   .homeContentMain {
     text-align: center;
     max-width: 80vw;

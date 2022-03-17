@@ -875,7 +875,7 @@ class Store {
 
   _getBaseAssets = async () => {
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API}/api/v1/baseAssets`, {
+      const response = await fetch(`https://x.diant.io/api/v1/baseAssets`, {
         method: 'get',
         headers: {
           Authorization: `Basic ${process.env.NEXT_PUBLIC_API_TOKEN}`,
@@ -906,10 +906,10 @@ class Store {
 
   _getRouteAssets = async () => {
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API}/api/v1/routeAssets`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API}/api/routes`, {
         method: 'get',
         headers: {
-          Authorization: `Basic ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+          // Authorization: `Basic ${process.env.NEXT_PUBLIC_API_TOKEN}`,
         },
       })
       const routeAssetsCall = await response.json()
@@ -922,10 +922,10 @@ class Store {
 
   _getPairs = async () => {
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API}/api/v1/pairs`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API}/api/pairs`, {
         method: 'get',
         headers: {
-          Authorization: `Basic ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+          // Authorization: `Basic ${process.env.NEXT_PUBLIC_API_TOKEN}`,
         },
       })
       const pairsCall = await response.json()
@@ -2072,10 +2072,10 @@ class Store {
 
   updatePairsCall = async (web3, account) => {
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API}/api/v1/updatePairs`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API}/api/updatePairs`, {
         method: 'get',
         headers: {
-          Authorization: `Basic ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+          // Authorization: `Basic ${process.env.NEXT_PUBLIC_API_TOKEN}`,
         },
       })
       const pairsCall = await response.json()

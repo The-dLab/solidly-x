@@ -370,7 +370,7 @@ const useStyles = makeStyles((theme) => ({
   searchContainer: {
     flex: 1,
     display: 'flex',
-    width: '100%',
+    width: '90%',
   },
   buttonOverride: {
     width: '100%',
@@ -542,7 +542,7 @@ const EnhancedTableToolbar = (props) => {
 
   return (
     <Toolbar className={classes.toolbar}>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} display="flex" alignItems="center">
         <Grid item lg={2} md={2} sm={12} xs={12}>
           <Button
             variant="contained"
@@ -559,8 +559,8 @@ const EnhancedTableToolbar = (props) => {
           <TextField
             className={classes.searchContainer}
             variant="outlined"
-            fullWidth
             placeholder="FTM, MIM, 0x..."
+            fullWidth
             value={search}
             onChange={onSearchChanged}
             InputProps={{

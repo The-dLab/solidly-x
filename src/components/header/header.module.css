@@ -5,13 +5,15 @@
   flex-wrap: wrap;
   padding: 20px 30px;
   min-height: 60px;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   z-index: 9 !important;
+  height: 150px;
   width: calc(100%);
   border: 0;
   border-radius: 0 !important;
+  background: url('../../../public/images/headerBg.jpg') no-repeat;
 }
 
 .hidden {
@@ -50,23 +52,7 @@
 .logoContainer {
   width: 260px;
   position: relative;
-}
-
-.deus {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  top: 14px;
-  left: 5px;
-  color: #fff;
-  text-decoration: none;
-}
-.deus:hover {
-  color: #06d3d7;
-}
-.deus p {
-  font-size: 10px !important;
-  margin-left: 5px;
+  margin-left: 40px;
 }
 
 .networkIcon {

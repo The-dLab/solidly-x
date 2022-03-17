@@ -1,0 +1,51 @@
+.asideWrapper {
+  background-color: #000;
+  min-height: 950px;
+  display: flex;
+  flex-direction: column;
+}
+
+.asideSection1 {
+  height: 50%;
+}
+
+.asideTitle {
+  height: 90px;
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  padding-left: 60px;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.navButton {
+  text-transform: capitalize !important;
+  border: 1px solid rgba(0, 0, 0, 0) !important;
+  color: rgb(214, 214, 214) !important;
+  /* color: #7e99b0 !important; */
+}
+
+.navButton {
+  text-transform: capitalize !important;
+  border: 1px solid rgba(0, 0, 0, 0) !important;
+  color: rgb(214, 214, 214) !important;
+}
+
+.navButtonDisable {
+  text-transform: capitalize !important;
+  border: 1px solid rgba(0, 0, 0, 0) !important;
+  color: #6f6f6f !important;
+}
+
+.testChange {
+  background-color: rgba(124, 124, 124, 0.726) !important;
+  color: #17b449 !important;
+}
+
+.navToggles {
+  min-height: 50px;
+  flex-flow: row wrap;
+  width: 100%;
+}

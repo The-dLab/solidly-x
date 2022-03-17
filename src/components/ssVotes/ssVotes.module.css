@@ -1,6 +1,6 @@
 .container {
   max-width: 1400px;
-  width: calc(100% - 180px);
+  width: calc(100% - 50px);
   display: flex;
   flex-direction: column;
   align-items: flex-end;

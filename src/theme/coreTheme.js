@@ -10,19 +10,19 @@ const coreTheme = {
     borderRadius: '12px',
   },
   typography: {
-    fontFamily: [
-      'Inter',
-      'Arial',
-      '-apple-system',
-      'BlinkMacSystemFont',
-      '"Segoe UI"',
-      'Roboto',
-      '"Helvetica Neue"',
-      'sans-serif',
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-    ].join(','),
+    // fontFamily: [
+    //   'Inter',
+    //   'Arial',
+    //   '-apple-system',
+    //   'BlinkMacSystemFont',
+    //   '"Segoe UI"',
+    //   'Roboto',
+    //   '"Helvetica Neue"',
+    //   'sans-serif',
+    //   '"Apple Color Emoji"',
+    //   '"Segoe UI Emoji"',
+    //   '"Segoe UI Symbol"',
+    // ].join(','),
     h1: {
       // Portfolio balance numbers
       fontSize: '32px',
@@ -116,7 +116,8 @@ const coreTheme = {
   },
   palette: {
     primary: {
-      main: 'rgba(0, 0, 0, 0.87)',
+      // main: 'rgba(0, 0, 0, 0.87)',
+      main: '#17B449',
     },
     secondary: {
       main: '#FFFFFF',
@@ -158,7 +159,7 @@ const coreTheme = {
     MuiToggleButton: {
       root: {
         border: 'none',
-        borderRadius: '12px',
+        borderRadius: '0px',
       },
       '&$selected': {
         border: '1px solid #06d3d7',

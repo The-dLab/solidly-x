@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Head from 'next/head'
-import Script from 'next/script'
 import Layout from '../components/layout'
 import { ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
@@ -77,7 +76,7 @@ export default function MyApp({ Component, pageProps }) {
         <title>Solidly</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
-      <Script defer data-domain="solidly.vision" src="https://plausible.io/js/plausible.js"></Script>
+      {/* <Script defer data-domain="solidly.vision" src="https://plausible.io/js/plausible.js"></Script> */}
       <ThemeProvider theme={themeConfig}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
