@@ -10,19 +10,6 @@ const coreTheme = {
     borderRadius: '12px',
   },
   typography: {
-    // fontFamily: [
-    //   'Inter',
-    //   'Arial',
-    //   '-apple-system',
-    //   'BlinkMacSystemFont',
-    //   '"Segoe UI"',
-    //   'Roboto',
-    //   '"Helvetica Neue"',
-    //   'sans-serif',
-    //   '"Apple Color Emoji"',
-    //   '"Segoe UI Emoji"',
-    //   '"Segoe UI Symbol"',
-    // ].join(','),
     h1: {
       // Portfolio balance numbers
       fontSize: '32px',
@@ -45,17 +32,6 @@ const coreTheme = {
     },
     h3: {
       // yearn title text YEARN
-      fontFamily: [
-        'Druk Wide Bold',
-        'Inter',
-        'Arial',
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'sans-serif',
-      ],
       fontSize: '1.5rem',
       fontWeight: 700,
       lineHeight: 1.167,

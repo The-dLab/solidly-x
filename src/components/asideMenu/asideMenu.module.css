@@ -1,6 +1,6 @@
 .asideWrapper {
   background-color: #000;
-  min-height: 950px;
+  min-height: 700px;
   display: flex;
   flex-direction: column;
 }
