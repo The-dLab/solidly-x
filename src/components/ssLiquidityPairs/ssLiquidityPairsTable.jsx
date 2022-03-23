@@ -374,12 +374,7 @@ const useStyles = makeStyles((theme) => ({
   },
   buttonOverride: {
     width: '100%',
-    color: 'rgb(6, 211, 215)',
-    background: 'rgb(23, 52, 72)',
     fontWeight: '700',
-    '&:hover': {
-      background: 'rgb(19, 44, 60)',
-    },
   },
   toolbar: {
     margin: '24px 0px',
@@ -395,7 +390,7 @@ const useStyles = makeStyles((theme) => ({
   filterButton: {
     background: '#111729',
     border: '1px solid rgba(126,153,176,0.3)',
-    color: '#06D3D7',
+    color: '#17B449',
     width: '100%',
     height: '94.5%',
     borderRadius: '10px',
@@ -403,6 +398,7 @@ const useStyles = makeStyles((theme) => ({
   actionButtonText: {
     fontSize: '15px',
     fontWeight: '700',
+    color: '#FFF',
   },
   filterContainer: {
     background: '#212b48',
@@ -546,7 +542,13 @@ const EnhancedTableToolbar = (props) => {
         <Grid item lg={2} md={2} sm={12} xs={12}>
           <Button
             variant="contained"
-            startIcon={<AddCircleOutlineIcon />}
+            startIcon={
+              <AddCircleOutlineIcon
+                style={{
+                  color: '#fff',
+                }}
+              />
+            }
             size="large"
             className={classes.buttonOverride}
             color="primary"

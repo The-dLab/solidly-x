@@ -494,6 +494,10 @@
   align-items: center;
 }
 
+.actionButtonText {
+  color: #fff;
+}
+
 .actionsContainer {
   display: grid;
   grid-gap: 12px;
@@ -555,17 +559,6 @@
 .priceInfo > .text {
   font-size: 13px !important;
   color: #7e99b0;
-}
-
-.buttonOverride {
-  background: rgb(23, 52, 72) !important;
-  color: rgb(6, 211, 215) !important;
-  font-weight: 700 !important;
-  max-height: 50px !important;
-}
-
-.buttonOverride:hover {
-  background: rgb(19, 44, 60) !important;
 }
 
 .route {

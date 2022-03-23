@@ -22,11 +22,10 @@
 }
 
 .notConnectedContent {
-  width: calc(100%) !important;
+  width: 100%;
+  min-height: 60vh;
   background: rgba(17, 23, 41, 0.2) !important;
   text-align: center;
-  padding: 50px;
-  height: calc(100vh);
   box-shadow: none !important;
   display: flex;
   align-items: center;
@@ -34,8 +33,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   border-radius: 0 !important;
-  position: fixed;
-  top: 0;
 }
 
 .contentFloat {
@@ -82,32 +79,7 @@
 }
 
 .buttonConnect {
-  background: rgba(6, 211, 215, 0.3) !important;
-  color: rgba(6, 211, 215, 1) !important;
-  border-radius: 60px !important;
-  padding: 12px 24px 14px 24px !important;
-  font-weight: 700 !important;
-  text-transform: none !important;
-  border: 1px solid rgba(6, 211, 215, 1) !important;
-  transform: scale(0.85);
-  -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  -ms-transition: all 300ms ease-out;
-  -o-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-}
-
-.buttonConnect:hover {
-  background: rgba(6, 211, 215, 1) !important;
-  color: #111729 !important;
-  text-transform: none !important;
-  border: 1px solid rgba(6, 211, 215, 1) !important;
-  transform: scale(0.9);
-  -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  -ms-transition: all 300ms ease-out;
-  -o-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
+  height: 50px;
 }
 
 @media screen and (max-width: 1280px) {

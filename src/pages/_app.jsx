@@ -73,7 +73,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <React.Fragment>
       <Head>
-        <title>Solidly</title>
+        <title>Solidly-X</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
       {/* <Script defer data-domain="solidly.vision" src="https://plausible.io/js/plausible.js"></Script> */}

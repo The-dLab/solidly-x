@@ -1,16 +1,19 @@
+import { useState } from 'react'
 import classes from './footer.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { faTelegram, faTwitter, faMedium } from '@fortawesome/free-brands-svg-icons'
+import DonateDialog from '../donateDialog/DonateDialog'
 import Link from '@material-ui/core/Link'
+import Image from 'next/image'
 
 function Footer() {
+  const [showDonate, setShowDonate] = useState(false)
   return (
     <div className={classes.footerContainer}>
       <div className={classes.footerMain}>
         <div className={classes.footerLeft}>
-          {/* <Image alt="" src="/images/box_logo.jpg" width="140" height="140" /> */}
-          <img alt="" src="/images/box_logo.png" width="140" height="140" className={classes.boxLogoImg} />
+          <Image alt="" src="/images/box_logo.png" width="140" height="140" className={classes.boxLogoImg} />
           <span className={classes.footerTitle}>dLab</span>
         </div>
         <div className={classes.footerRight}>
@@ -18,14 +21,13 @@ function Footer() {
           <div className={classes.aboutContent}>
             <Link
               underline="none"
-              target="_blank"
-              rel="noreferrer"
-              href="https://dlab.zone"
-              style={{ textDecoration: 'none', color: '#fff' }}
+              onClick={() => setShowDonate(true)}
+              style={{ textDecoration: 'none', color: '#fff', cursor: 'pointer' }}
             >
               <FontAwesomeIcon
                 icon={faHeart}
                 style={{
+                  color: 'red',
                   marginRight: '8px',
                 }}
               />
@@ -80,6 +82,7 @@ function Footer() {
         </div>
       </div>
       <div className={classes.footerBottom}>Developed by dLab ©Copyright 2022 </div>
+      <DonateDialog open={showDonate} onClose={() => setShowDonate(false)} />
     </div>
   )
 }

@@ -58,9 +58,22 @@ function Vesting({ changeTheme }) {
               Lock your Solid to earn rewards and governance rights. Each locked position is created and represented as
               an NFT, meaning you can hold multiple locked positions.
             </Typography>
-            <Button disableElevation className={classes.buttonConnect} variant="contained" onClick={onAddressClicked}>
+            <Button
+              disableElevation
+              className={classes.buttonConnect}
+              variant="contained"
+              color="primary"
+              onClick={onAddressClicked}
+            >
               {account && account.address && <div className={`${classes.accountIcon} ${classes.metamask}`}></div>}
-              <Typography>Connect Wallet to Continue</Typography>
+              <Typography
+                style={{
+                  color: '#fff',
+                  fontWeight: 'bold',
+                }}
+              >
+                Connect Wallet to Continue
+              </Typography>
             </Button>
           </div>
         </Paper>

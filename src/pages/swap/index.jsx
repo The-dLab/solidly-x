@@ -50,9 +50,22 @@ function Swap({ changeTheme }) {
             <Typography className={classes.mainDescNC} variant="body2">
               Swap between Solidly supported stable and volatile assets.
             </Typography>
-            <Button disableElevation className={classes.buttonConnect} variant="contained" onClick={onAddressClicked}>
+            <Button
+              disableElevation
+              color="primary"
+              className={classes.buttonConnect}
+              variant="contained"
+              onClick={onAddressClicked}
+            >
               {account && account.address && <div className={`${classes.accountIcon} ${classes.metamask}`}></div>}
-              <Typography>Connect Wallet to Continue</Typography>
+              <Typography
+                style={{
+                  color: '#fff',
+                  fontWeight: 'bold',
+                }}
+              >
+                Connect Wallet to Continue
+              </Typography>
             </Button>
           </div>
         </Paper>

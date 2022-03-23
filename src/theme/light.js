@@ -16,7 +16,7 @@ const theme = createTheme({
     ...coreTheme.overrides,
     MuiSnackbarContent: {
       root: {
-        color: 'rgba(0, 0, 0, 0.87)',
+        // color: 'rgba(0, 0, 0, 0.87)',
         backgroundColor: '#F8F9FE',
         padding: '0px',
         minWidth: 'auto',

@@ -20,7 +20,6 @@ export default function Layout({ children, configure, backClicked, changeTheme, 
       <div className={classes.content}>
         {!configure && <Header backClicked={backClicked} changeTheme={changeTheme} title={title} />}
         <SnackbarController />
-        {/* //sidebar */}
         <div className={classes.mainBody}>
           <div className={classes.aside}>
             <AsideMenu />

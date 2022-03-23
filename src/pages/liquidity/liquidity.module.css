@@ -5,7 +5,7 @@
   position: relative;
 }
 
-.notConnectedContent {
+/* .notConnectedContent {
   width: calc(100%) !important;
   background: rgba(17, 23, 41, 0.2) !important;
   text-align: center;
@@ -20,6 +20,20 @@
   border-radius: 0 !important;
   position: fixed;
   top: 0;
+} */
+
+.notConnectedContent {
+  width: 100%;
+  min-height: 60vh;
+  background: rgba(17, 23, 41, 0.2) !important;
+  text-align: center;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-radius: 0 !important;
 }
 
 .contentFloat {
@@ -70,6 +84,10 @@
 }
 
 .buttonConnect {
+  height: 50px;
+}
+
+/* .buttonConnect {
   background: rgba(6, 211, 215, 0.3) !important;
   color: rgba(6, 211, 215, 1) !important;
   border-radius: 60px !important;
@@ -96,7 +114,7 @@
   -ms-transition: all 300ms ease-out;
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
-}
+} */
 
 @media screen and (max-width: 1600px) {
 }

@@ -54,9 +54,22 @@ function Vote({ changeTheme }) {
               Use your veSolid to vote for your selected liquidity pair’s rewards distribution or create a bribe to
               encourage others to do the same.
             </Typography>
-            <Button disableElevation className={classes.buttonConnect} variant="contained" onClick={onAddressClicked}>
+            <Button
+              disableElevation
+              className={classes.buttonConnect}
+              color="primary"
+              variant="contained"
+              onClick={onAddressClicked}
+            >
               {account && account.address && <div className={`${classes.accountIcon} ${classes.metamask}`}></div>}
-              <Typography>Connect Wallet to Continue</Typography>
+              <Typography
+                style={{
+                  color: '#fff',
+                  fontWeight: 'bold',
+                }}
+              >
+                Connect Wallet to Continue
+              </Typography>
             </Button>
           </div>
         </Paper>

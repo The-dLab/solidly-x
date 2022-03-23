@@ -57,9 +57,22 @@ function Liquidity({ changeTheme }) {
             <Typography className={classes.mainDescNC} variant="body2">
               Create a pair or add liquidity to existing stable or volatile Liquidity Pairs.
             </Typography>
-            <Button disableElevation className={classes.buttonConnect} variant="contained" onClick={onAddressClicked}>
+            <Button
+              disableElevation
+              className={classes.buttonConnect}
+              variant="contained"
+              color="primary"
+              onClick={onAddressClicked}
+            >
               {account && account.address && <div className={`${classes.accountIcon} ${classes.metamask}`}></div>}
-              <Typography>Connect Wallet to Continue</Typography>
+              <Typography
+                style={{
+                  color: '#fff',
+                  fontWeight: 'bold',
+                }}
+              >
+                Connect Wallet to Continue
+              </Typography>
             </Button>
           </div>
         </Paper>

@@ -203,7 +203,7 @@ export default function Rewards() {
           <Grid item lg="auto" md="auto" sm="12" xs="12">
             <Button
               variant="contained"
-              startIcon={<AddCircleOutlineIcon />}
+              startIcon={<AddCircleOutlineIcon style={{ color: '#fff' }} />}
               size="large"
               className={classes.buttonOverride}
               color="primary"

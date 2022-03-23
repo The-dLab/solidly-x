@@ -94,6 +94,7 @@ const coreTheme = {
     primary: {
       // main: 'rgba(0, 0, 0, 0.87)',
       main: '#17B449',
+      contrastText: '#fff',
     },
     secondary: {
       main: '#FFFFFF',
@@ -130,16 +131,6 @@ const coreTheme = {
     MuiDialog: {
       paperWidthSm: {
         maxWidth: '800px',
-      },
-    },
-    MuiToggleButton: {
-      root: {
-        border: 'none',
-        borderRadius: '0px',
-      },
-      '&$selected': {
-        border: '1px solid #06d3d7',
-        backgroundColor: 'rgba(0,0,0,0)',
       },
     },
     MuiSnackbar: {

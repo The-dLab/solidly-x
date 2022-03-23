@@ -76,6 +76,9 @@ function AsideMenu() {
     if (activePath.includes('whitelist')) {
       setActive('whitelist')
     }
+    if (activePath.includes('chainlist')) {
+      setActive('chainlist')
+    }
   }, [])
 
   const renderSubNav = (title, link, icon, disabled) => {
@@ -122,8 +125,6 @@ function AsideMenu() {
         {renderSubNav('Vote', 'vote', faCheckToSlot)}
         {renderSubNav('Rewards', 'rewards', faMoneyBill1)}
         {renderSubNav('Whitelist', 'whitelist', faTableList)}
-        {/* {renderSubNavWithIcon('/socials/telegram.svg', 'https://t.me/')}
-        {renderSubNavWithIcon('/socials/twitter.svg', 'https://twitter.com/')} */}
       </ToggleButtonGroup>
     )
   }
@@ -138,9 +139,38 @@ function AsideMenu() {
         className={classes.navToggles}
       >
         {renderSubNav('Bridge', 'bridge', faArrowsSpin, true)}
-        {renderSubNav('Chainlist', 'chainlist', faList, true)}
-        {renderSubNav('Revoke/Approval', 'revoke', faArrowsUpDown, true)}
+        {renderSubNav('Chainlist', 'chainlist', faList)}
+        {renderSubNavWithExternalLink('Revoke/Approval', 'https://ftmscan.com/tokenapprovalchecker', faArrowsUpDown)}
       </ToggleButtonGroup>
+    )
+  }
+
+  const renderSubNavWithExternalLink = (title, link, icon) => {
+    return (
+      <ToggleButton
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={classes.navButton}
+        classes={{ selected: classes.testChange }}
+        style={{
+          display: 'flex',
+          justifyContent: 'flex-start',
+          paddingLeft: '60px',
+        }}
+      >
+        {icon ? (
+          <FontAwesomeIcon
+            icon={icon}
+            style={{
+              marginRight: '8px',
+            }}
+          />
+        ) : null}
+        <Typography variant="h2" className={classes.subtitleText}>
+          {title}
+        </Typography>
+      </ToggleButton>
     )
   }
 

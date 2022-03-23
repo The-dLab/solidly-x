@@ -14,9 +14,8 @@ const theme = createTheme({
       main: '#17B449',
     },
     text: {
-      primary: 'rgba(255, 255, 255, 0.87)',
+      primary: '#FFFFFF',
       secondary: '#7E99B0',
-      // primary: '#17B449',
     },
     type: 'dark',
   },

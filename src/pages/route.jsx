@@ -6,6 +6,7 @@ import Vote from './vote'
 import Rewards from './rewards'
 import Whitelist from './whitelist'
 import Bribe from './bribe/create'
+import Chainlist from './chainlist'
 
 import { useRouter } from 'next/router'
 
@@ -31,6 +32,8 @@ function Route({ changeTheme, ...props }) {
     return <Whitelist props={props} changeTheme={changeTheme} />
   } else if (activePath.includes('/bribe')) {
     return <Bribe props={props} changeTheme={changeTheme} />
+  } else if (activePath.includes('/chainlist')) {
+    return <Chainlist props={props} />
   } else if (activePath.includes('/')) {
     return <Swap props={props} changeTheme={changeTheme} />
   } else {

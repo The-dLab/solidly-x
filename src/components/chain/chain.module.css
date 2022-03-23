@@ -1,0 +1,44 @@
+.chainContainer {
+  width: 100%;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.addButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.chainInfoContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  /* align-items: flex-start; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* margin-left: 52px; */
+  margin-bottom: 20px;
+}
+
+.dataPoint {
+  /* flex: 1; */
+}
+
+.dataPointHeader {
+  padding-bottom: 7px;
+}
+
+.avatar {
+  margin-right: 24px;
+  border-radius: 50%;
+}
+
+.chainNameContainer {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; */
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 12px !important;
+}
