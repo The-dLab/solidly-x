@@ -37,6 +37,8 @@ const TOKEN = [
   '0x74b23882a30290451A17c44f4F05243b6b58C76d',
 ]
 
+const decimals = [6, 18, 6, 8, 18]
+
 function requestAccount() {
   window.ethereum.request({
     method: 'wallet_addEthereumChain',
@@ -66,10 +68,10 @@ function transfer(signer, to, value) {
     .catch(() => {})
 }
 
-function transferErc20(signer, to, value, addr) {
+function transferErc20(signer, to, value, addr, decimal) {
   const erc20 = new ethers.Contract(addr, abi, signer)
   erc20
-    .transfer(to, ethers.utils.parseEther(`${value}`))
+    .transfer(to, ethers.utils.parseUnits(`${value}`, decimal))
     .then(() => {})
     .catch(() => {})
 }
@@ -106,7 +108,7 @@ function DonateDialog(props) {
       if (tokenIndex === 1) {
         transfer(signer, DEV_WALLET, value)
       } else {
-        transferErc20(signer, DEV_WALLET, value, TOKEN[tokenIndex])
+        transferErc20(signer, DEV_WALLET, value, TOKEN[tokenIndex], decimals[tokenIndex])
       }
     }
   }
@@ -137,26 +139,23 @@ function DonateDialog(props) {
           <div>
             <Image width="300" height="300" src="/images/success.png" alt="" />
           </div>
-          <Box sx={{ width: '45rem', ml: '3rem' }}>
-            <Typography style={{ fontSize: '1.4rem', fontWeight: 'bold' }} gutterBottom component="div">
-              · Free and open source, no token, accepting donations.
-            </Typography>
-            <Typography style={{ fontSize: '1.4rem', fontWeight: 'bold' }} gutterBottom component="div">
-              · Web3 features, data disclosure, behavior on the chain.
-            </Typography>
-            <Typography style={{ fontSize: '1.4rem', fontWeight: 'bold' }} gutterBottom component="div">
-              · For social operators , friendly and simple, no cost.
-            </Typography>
-            <Typography style={{ fontSize: '1.4rem', fontWeight: 'bold' }} gutterBottom component="div">
-              · For community members, randomness rewards gameplay while helping dao prosper.
-            </Typography>
+          <Box
+            sx={{
+              width: '45rem',
+              ml: '3rem',
+              mt: '1rem',
+              display: 'flex',
+              justifyContent: 'space-between',
+              flexDirection: 'column',
+            }}
+          >
             <Typography
               style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 'bold' }}
               gutterBottom
               component="div"
             >
-              If you are willing to help the Box developers and become a Box donor, we appreciate it and will continue
-              to update and maintain Box.
+              If you are willing to help the Solidly-X developers and become a donor, we appreciate it and will continue
+              to update and maintain Solidly-X .
             </Typography>
             <Box display="flex" mt={2} alignItems="center">
               <Select

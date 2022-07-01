@@ -79,6 +79,9 @@ function AsideMenu() {
     if (activePath.includes('chainlist')) {
       setActive('chainlist')
     }
+    if (activePath.includes('bridge')) {
+      setActive('bridge')
+    }
   }, [])
 
   const renderSubNav = (title, link, icon, disabled) => {
@@ -117,6 +120,12 @@ function AsideMenu() {
         exclusive
         onChange={onActiveClick}
         className={classes.navToggles}
+        sx={{
+          '&.MuiToggleButton-root': {
+            borderRadius: '0px !important',
+            mx: 1,
+          },
+        }}
       >
         {renderSubNav('Swap', 'swap', faArrowRightArrowLeft)}
         {renderSubNav('Liquidity', 'liquidity', faRotate)}
@@ -138,7 +147,7 @@ function AsideMenu() {
         onChange={onActiveClick}
         className={classes.navToggles}
       >
-        {renderSubNav('Bridge', 'bridge', faArrowsSpin, true)}
+        {renderSubNav('Bridge', 'bridge', faArrowsSpin)}
         {renderSubNav('Chainlist', 'chainlist', faList)}
         {renderSubNavWithExternalLink('Revoke/Approval', 'https://ftmscan.com/tokenapprovalchecker', faArrowsUpDown)}
       </ToggleButtonGroup>
@@ -186,9 +195,6 @@ function AsideMenu() {
         <div className={classes.asideTitle}>
           <div>
             <span>Tools</span>
-            <span style={{ marginLeft: '5px', fontSize: '18px', fontWeight: '400', color: '#6F6F6F' }}>
-              Coming soon...
-            </span>
           </div>
         </div>
         <div className={classes.asideContent}>{renderTools()}</div>

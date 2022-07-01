@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import classes from './header.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import DonateDialog from '../donateDialog/DonateDialog'
+import Link from '@material-ui/core/Link'
 
 import {
   Typography,
@@ -128,7 +132,7 @@ const StyledBadge = withStyles((theme) => ({
 function Header(props) {
   const accountStore = stores.accountStore.getStore('account')
   const router = useRouter()
-
+  const [showDonate, setShowDonate] = useState(false)
   const [account, setAccount] = useState(accountStore)
   const [darkMode, setDarkMode] = useState(props.theme.palette.type === 'dark' ? true : false)
   const [unlockOpen, setUnlockOpen] = useState(false)
@@ -225,13 +229,28 @@ function Header(props) {
           </a>
         </div>
 
-        <div style={{ width: '260px', display: 'flex', justifyContent: 'flex-end' }}>
+        <div style={{ width: '360px', display: 'flex', justifyContent: 'flex-end' }}>
+          <div style={{ width: '100px', display: 'flex', alignItems: 'center' }}>
+            <Link
+              underline="none"
+              onClick={() => setShowDonate(true)}
+              style={{ textDecoration: 'none', color: '#fff', cursor: 'pointer' }}
+            >
+              <FontAwesomeIcon
+                icon={faHeart}
+                style={{
+                  color: 'red',
+                  marginRight: '8px',
+                }}
+              />
+              Donate
+            </Link>
+          </div>
           {process.env.NEXT_PUBLIC_CHAINID == '4002' && (
             <div className={classes.testnetDisclaimer}>
               <Typography className={classes.testnetDisclaimerText}>Testnet</Typography>
             </div>
           )}
-
           {transactionQueueLength > 0 && (
             <IconButton
               className={classes.accountButton}
@@ -330,6 +349,7 @@ function Header(props) {
           </div>
         </div>
       ) : null}
+      <DonateDialog open={showDonate} onClose={() => setShowDonate(false)} />
     </div>
   )
 }

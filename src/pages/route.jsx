@@ -9,6 +9,7 @@ import Bribe from './bribe/create'
 import Chainlist from './chainlist'
 
 import { useRouter } from 'next/router'
+import Bridge from './bridge'
 
 function Route({ changeTheme, ...props }) {
   const router = useRouter()
@@ -34,6 +35,8 @@ function Route({ changeTheme, ...props }) {
     return <Bribe props={props} changeTheme={changeTheme} />
   } else if (activePath.includes('/chainlist')) {
     return <Chainlist props={props} />
+  } else if (activePath.includes('/bridge')) {
+    return <Bridge props={props} />
   } else if (activePath.includes('/')) {
     return <Swap props={props} changeTheme={changeTheme} />
   } else {

@@ -1,0 +1,112 @@
+{
+  "acrossto": {
+    "display_name": "Across.to",
+    "note": "Pool based",
+    "url": "https://across.to/"
+  },
+  "allbridge": {
+    "display_name": "Allbridge",
+    "note": "Pool+Mapping based",
+    "url": "https://app.allbridge.io/bridge"
+  },
+  "anyswapv2": {
+    "display_name": "Multichain",
+    "note": "Mapping based",
+    "url": "https://app.multichain.org/#/router"
+  },
+  "anyswapv3": {
+    "display_name": "Multichain",
+    "note": "Pool based",
+    "url": "https://app.multichain.org/#/router"
+  },
+  "ascendex": {
+    "display_name": "AscendEx (CEX)",
+    "note": "AscendEx Exchange",
+    "url": "https://ascendex.com/"
+  },
+  "binance": {
+    "display_name": "Binance (CEX)",
+    "note": "Binance Exchange",
+    "url": "https://www.binance.com/"
+  },
+  "binancebridge": {
+    "display_name": "Binance Bridge",
+    "note": "CEX based, equal to Binance; free into BSC",
+    "url": "https://www.binance.org/en/bridge"
+  },
+  "bybit": {
+    "display_name": "Bybit (CEX)",
+    "note": "Bybit Exchange",
+    "url": "https://www.bybit.com/"
+  },
+  "cbridge": {
+    "display_name": "cBridge",
+    "note": "Pool based",
+    "url": "https://cbridge.celer.network/#/transfer"
+  },
+  "ftx": {
+    "display_name": "FTX (CEX)",
+    "note": "FTX Exchange",
+    "url": "https://ftx.com/"
+  },
+  "gateio": {
+    "display_name": "Gate.io (CEX)",
+    "note": "Gate.io Exchange",
+    "url": "https://www.gate.io/"
+  },
+  "hop": {
+    "display_name": "Hop Exchange",
+    "note": "Mapping based",
+    "url": "https://app.hop.exchange/send?token=USDC"
+  },
+  "hotbit": {
+    "display_name": "Hotbit (CEX)",
+    "note": "Hotbit Exchange",
+    "url": "https://www.hotbit.io/"
+  },
+  "huobi": {
+    "display_name": "Huobi (CEX)",
+    "note": "Huobi Exchange",
+    "url": "https://www.huobi.com/"
+  },
+  "kucoin": {
+    "display_name": "KuCoin (CEX)",
+    "note": "KuCoin Exchange",
+    "url": "https://www.kucoin.com/"
+  },
+  "mxc": {
+    "display_name": "MXC (CEX)",
+    "note": "MEXC Exchange",
+    "url": "https://www.mexc.com/"
+  },
+  "okx": {
+    "display_name": "OKX (CEX)",
+    "note": "OKX Exchange",
+    "url": "https://www.okx.com/"
+  },
+  "orbiter": {
+    "display_name": "Orbiter",
+    "note": "Pool based",
+    "url": "https://www.orbiter.finance/"
+  },
+  "relay": {
+    "display_name": "Relay",
+    "note": "Mapping based",
+    "url": "https://app.relaychain.com/#/cross-chain-bridge-transfer"
+  },
+  "renbridge": {
+    "display_name": "RenBridge",
+    "note": "Mapping based, only support non-EVM tokens",
+    "url": "https://bridge.renproject.io/mint"
+  },
+  "terrabridge": {
+    "display_name": "Terra Bridge",
+    "note": "Mapping based",
+    "url": "https://bridge.terra.money/"
+  },
+  "xpollinatev2": {
+    "display_name": "xpollinate",
+    "note": "Pool based",
+    "url": "https://bridge.connext.network/"
+  }
+}
